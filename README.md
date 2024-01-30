@@ -1,9 +1,9 @@
 # typer-plugins
 
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
-[![image](https://img.shields.io/pypi/v/typer-plugins.svg)](https://pypi.python.org/pypi/typer-plugins)
-[![image](https://img.shields.io/pypi/l/typer-plugins.svg)](https://pypi.python.org/pypi/typer-plugins)
-[![image](https://img.shields.io/pypi/pyversions/typer-plugins.svg)](https://pypi.python.org/pypi/ruff)
+[![PyPI Version](https://img.shields.io/pypi/v/typer-plugins.svg)](https://pypi.python.org/pypi/typer-plugins)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+[![Python Versions](https://img.shields.io/pypi/pyversions/typer-plugins.svg)](https://pypi.python.org/pypi/ruff)
 [![Actions status](https://github.com/BSpendlove/typer-plugins/workflows/ci/badge.svg)](https://github.com/BSpendlove/typer-plugins/actions)
 
 Register Typer CLI applications to a main root application to make it more pluggable.
