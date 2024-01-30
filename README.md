@@ -1,7 +1,9 @@
 # typer-plugins
 Register Typer CLI applications to a main root application to make it more pluggable.
 
-This is inspired by [click-plugins](https://github.com/click-contrib/click-plugins) so I have created a similar package to register Typer CLI based applications in a similar plugin format. It's slightly different how to use and I'm still actively working on this project to improve the process of registering, detecting duplicate plugins. Natively running a plugin with broken code will not break the full application, only when someone attempts to execute that specific command.
+This is inspired by [click-plugins](https://github.com/click-contrib/click-plugins) so I have created a similar package to register Typer CLI based applications in a similar plugin format. It's slightly different how to use it and I'm still actively working on this project to improve the process of registering, detecting duplicate plugins. Natively running a plugin with broken code will not break the full application, only when someone attempts to execute that specific command.
+
+But now you can manage your Typer CLI applications with plugin based architecture, managing separate sub-command groups in separate Git repositories.
 
 
 ## How to use

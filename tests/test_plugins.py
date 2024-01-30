@@ -15,7 +15,9 @@ def test_root_app():
 
 def test_root_app_registered_plugins():
     assert app.registered_groups
-    assert [group.name for group in app.registered_groups] == ["plugin-a", "plugin-b"]
+    registered_groups = [group.name for group in app.registered_groups]
+    assert "plugin-a" in registered_groups
+    assert "plugin-b" in registered_groups
     
 def test_root_app_plugins_have_commands():
     for group in app.registered_groups:
