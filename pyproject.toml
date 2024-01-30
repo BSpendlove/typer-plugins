@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "typer-plugins"
+version = "0.1.0"
+description = "Register Typer CLI applications to a main application to make it more pluggable."
+authors = ["Brandon Spendlove <brandon-spendlove@hotmail.co.uk>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.9.0"
+
+[tool.ruff]
+exclude = [
+    "examples",
+    "tests"
+]
+
+[tool.ruff.lint]
+select = ["D"]
+
+ignore = [
+    # Relax the convention by _not_ requiring documentation for every __init__.
+    "D107",
+]
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.15"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
