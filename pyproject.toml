@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "typer-plugins"
-version = "0.1.0a1"
+version = "0.1.0"
 description = "Register Typer CLI applications to a main application to make it more pluggable."
 authors = ["Brandon Spendlove <brandon-spendlove@hotmail.co.uk>"]
 readme = "README.md"
