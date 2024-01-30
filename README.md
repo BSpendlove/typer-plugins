@@ -1,4 +1,11 @@
 # typer-plugins
+
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+[![image](https://img.shields.io/pypi/v/typer-plugins.svg)](https://pypi.python.org/pypi/typer-plugins)
+[![image](https://img.shields.io/pypi/l/typer-plugins.svg)](https://pypi.python.org/pypi/typer-plugins)
+[![image](https://img.shields.io/pypi/pyversions/typer-plugins.svg)](https://pypi.python.org/pypi/ruff)
+[![Actions status](https://github.com/BSpendlove/typer-plugins/workflows/ci/badge.svg)](https://github.com/BSpendlove/typer-plugins/actions)
+
 Register Typer CLI applications to a main root application to make it more pluggable.
 
 This is inspired by [click-plugins](https://github.com/click-contrib/click-plugins) so I have created a similar package to register Typer CLI based applications in a similar plugin format. It's slightly different how to use it and I'm still actively working on this project to improve the process of registering, detecting duplicate plugins. Natively running a plugin with broken code will not break the full application, only when someone attempts to execute that specific command.
