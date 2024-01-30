@@ -1,0 +1,20 @@
+---
+name: Feature Request
+description: Suggest a new feature or enhancement for typer-plugins
+labels: ["type: feature"]
+body:
+  - type: textarea
+    attributes:
+      label: Feature/Enhancement you are proposing
+      description: >
+        Describe in detail what feature or enhancement you would like to add to
+        typer-plugins.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reason for Feature/Enhancement
+      description: >
+        Describe the purpose of this change and what it solves for you or the community.
+    validations:
+      required: true

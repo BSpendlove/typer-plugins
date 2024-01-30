@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "plugin-a"
+version = "0.1.0"
+description = ""
+authors = ["Brandon Spendlove <brandon-spendlove@hotmail.co.uk>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.plugins."exampleapp.plugins"]
+"plugin-a" = "plugin_a.app:app"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

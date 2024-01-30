@@ -1,0 +1,45 @@
+---
+name: Bug Report
+description: Report a bug that is currently in the latest typer-plugins release
+labels: ["type: bug"]
+body:
+  - type: dropdown
+    attributes:
+      label: Python version
+      description: What version of Python are you currently running?
+      options:
+        - "<3.9"
+        - "3.9"
+        - "3.10"
+        - "3.11"
+        - "3.12"
+        - ">3.12"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: How to reproduce this locally
+      description: >
+        Please note here the exact steps you take so that other people can reproduce the same bug and
+        attempt to fix the issue. Ensure you are using the latest release of typer-plugins and that you are
+        not using any other modules that enhance the core code itself.
+      placeholder: |
+        1. Created a plugin called 'xyz'
+        2. Registered the plugin using pyproject.toml, here is an example: example-here
+        3. Plugin is not showing when it should be
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What should happen?
+      description: Explain what you think should have happened
+      placeholder: I should be able see xyz command under my command sub-group
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What happened?
+      description: Explain what happened instead
+      placeholder: I just saw commands a and b not xyz
+    validations:
+      required: true
