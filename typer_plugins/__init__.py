@@ -63,6 +63,11 @@ def register_plugins(app: typer.Typer, entrypoint: str) -> None:
             logging.error(f"Typer CLI Plugin '{plugin.name}' already exist.")
             raise TyperCLIAlreadyRegistered(plugin.name)
 
-        app.add_typer(plugin.load(), name=plugin.name)
+        try:
+            resolved_plugin = plugin.load()
+        except ModuleNotFoundError as err:
+            resolved_plugin = typer.Typer(help=f"Failed to load plugin - {err.msg}")
+
+        app.add_typer(resolved_plugin, name=plugin.name)
         registered_plugins.append(plugin.name)
         logging.info(f"Successfully loaded Typer CLI plugin '{plugin.name}'.")
