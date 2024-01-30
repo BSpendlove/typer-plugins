@@ -19,8 +19,10 @@ jobs:
       - name: Run Tests
         run: |
           pip install -r requirements.txt .
+          pip install examples/plugin_a
+          pip install examples/plugin_b
           pip install pytest
-          pytest -s tests/
+          python3 -m pytest -s tests/
       - name: Run image
         uses: abatilo/actions-poetry@v2
         with:
